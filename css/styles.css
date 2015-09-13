@@ -36,6 +36,10 @@ a:hover {
     color:#f44d3c;
 }
 
+.text-blue, a.text-blue {
+    color:#081528;
+}
+
 .btn-huge {
     padding:17px 22px;
     font-size:22px;
@@ -61,16 +65,19 @@ a:hover {
 
 .navbar-trans .navbar-brand, .navbar-trans >.container-fluid .navbar-brand {
     padding: 14px;
-    color:#f44d3c;
+    /*color:#f44d3c;*/
+	color: #81CFE0;
 }
 
 .navbar-trans li>a:focus,.navbar-trans li.active {
-	background-color:#f44d3c;
+	/*background-color:#f44d3c;*/
+	background-color:#4183D7;
 	color:#333;
 }
 
 .navbar-trans li>a:hover {
-	background-color:#f44d3c;
+	/*background-color:#f44d3c;*/
+	background-color:#59ABE3;
 	color:#fff;
 	opacity:0.5;
 }
@@ -196,3 +203,60 @@ footer .nav>li>a:hover {
     background-color:transparent;
 	color:#fff;
 }
+
+#projectsHeader{
+	text-align:center;
+	padding-bottom: 40px;
+	color: #fff;
+}
+
+a#moreLink{
+	width: 500px;
+    display: block;
+	margin-top:40px;
+    margin-left: auto;
+	margin-right: auto;
+	font-size: 68px;
+	text-align:center;
+}
+.myButton {
+	-moz-box-shadow:inset 0px -3px 7px 0px #1c4152;
+	-webkit-box-shadow:inset 0px -3px 7px 0px #1c4152;
+	box-shadow:inset 0px -3px 7px 0px #1c4152;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1b85c2), color-stop(1, #03111c));
+	background:-moz-linear-gradient(top, #1b85c2 5%, #03111c 100%);
+	background:-webkit-linear-gradient(top, #1b85c2 5%, #03111c 100%);
+	background:-o-linear-gradient(top, #1b85c2 5%, #03111c 100%);
+	background:-ms-linear-gradient(top, #1b85c2 5%, #03111c 100%);
+	background:linear-gradient(to bottom, #1b85c2 5%, #03111c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b85c2', endColorstr='#03111c',GradientType=0);
+	background-color:#1b85c2;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #03111c), color-stop(1, #1b85c2));
+	background:-moz-linear-gradient(top, #03111c 5%, #1b85c2 100%);
+	background:-webkit-linear-gradient(top, #03111c 5%, #1b85c2 100%);
+	background:-o-linear-gradient(top, #03111c 5%, #1b85c2 100%);
+	background:-ms-linear-gradient(top, #03111c 5%, #1b85c2 100%);
+	background:linear-gradient(to bottom, #03111c 5%, #1b85c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#03111c', endColorstr='#1b85c2',GradientType=0);
+	background-color:#03111c;
+}
+.myButton:active {
+	position:block;
+	top:1px;
+}
+
+
