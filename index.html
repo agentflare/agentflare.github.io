@@ -1,98 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Section scroller one-page template</title>
+    <meta name="description" content="This one page example has a fixed navbar and full page height sections. Each section is vertically centered on larger screens, and then stack responsively on smaller screens. Scrollspy is used to activate the current menu item. This layout also has a contact form example. Uses animate.css, FontAwesome, Google Fonts (Lato and Bitter) and Bootstrap." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
-			<div class= "card" z-default='20' z-hover='50' no-margin no-padding>
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="intro-message">
-							<h1 id = "name">Samuel Wu</h1>
-							<h3 id = "title">Software Engineer and stuff</h3>
-							<hr class="intro-divider">
-							<ul class="list-inline intro-social-buttons">
-								<li>
-									<a href="#" class="btn btn-default btn-lg"><!--i class="fa fa-twitter fa-fw"></i--> <span class="network-name">Contact</span></a>
-								</li>
-								<li>
-									<a href="#" class="btn btn-default btn-lg"><!--i class="fa fa-github fa-fw"></i--> <span class="network-name">Resume</span></a>
-								</li>
-								<li>
-									<a href="#" class="btn btn-default btn-lg"><!--i class="fa fa-linkedin fa-fw"></i--> <span class="network-name">Portfolio</span></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body >
+    <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand text-blue" href="#">Samuel Wu</a>
         </div>
-        <!-- /.container -->
-
+        <div class="navbar-collapse collapse" id="navbar-collapsible">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li>&nbsp;</li>
+            </ul>
+            <!--ul class="nav navbar-nav navbar-right">
+                <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-heart-o fa-lg"></i></a></li>
+            </ul-->
+        </div>
     </div>
-    <!-- /.intro-header -->
+</nav>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#about">Github</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">LinkedIn</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
+<section class="container-fluid" id="section1">
+    <div class="v-center">
+        <h1 class="text-center">Samuel Wu</h1>
+		<!-- Convert this to rotating inspiring words-->
+        <p class="text-center">
+            <br>
+			<h2 class="text-center lato animate slideInDown">Making the world <div id="coolword"><b>A better place</b></div></h2>
+        </p>
+    </div>
+    <a href="#projects">
+		<div class="scroll-down bounceInDown animated">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+</section>
+
+<!--section class="container-fluid" id="section2">
+    <div class="container v-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="panel panel-default slideInLeft animate">
+                            <div class="panel-heading">
+                            <h3>Robust</h3></div>
+                            <div class="panel-body">
+                                <p>There is other content and snippets of details or features that can be placed here..</p>
+                                <hr>GO
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="panel panel-default slideInUp animate">
+                            <div class="panel-heading">
+                            <h3>Simple</h3></div>
+                            <div class="panel-body">
+                                <p>There is other content and snippets of details or features that can be placed here..</p>
+                                <hr>GO
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="panel panel-default slideInRight animate">
+                            <div class="panel-heading">
+                            <h3>Clean</h3></div>
+                            <div class="panel-body">
+                                <p>There is other content and snippets of details or features that can be placed here..</p>
+                                <hr>GO
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="row">
+            <br>
+        </div>
+    </div>
+</section-->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-	<!--card-depth-->
-	<script src="js/card-depth.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<section id="projects">
+    <div class="container-fluid v-center">
+	<div id="projectsHeader">
+		<h1>Projects</h1>
+	</div>
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-3 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+						<img style="width:300px;" class="img-circle img-responsive img-thumbnail" src="assets/pics/MyoAirGuitarT2.png">
+                    </a>
+                    <h3 class="text-center">Myo Air Guitar</h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:300px;" class="img-circle img-responsive img-thumbnail" src="assets/pics/PassItOn.png">
+                    </a>
+                    <h3 class="text-center">Pass It On!!</h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:300px;" class="img-circle img-responsive img-thumbnail" src="assets/pics/3dchess.png">
+                    </a>
+                    <h3 class="text-center">3D Chess</h3>
+                </div>
+            </div>
+        </div>
+        <!--div class="row">
+            <div class="col-sm-2 col-sm-offset-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+                <div class="text-center">
+                    <a href="">
+                        <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
+                    </a>
+                    <h3 class="text-center"></h3>
+                </div>
+            </div>
+        </div>
+        <!--/row-->
+			<a href="./index4.html" class="myButton" id="moreLink">See Portfolio</a>
+    </div>
+</section>
 
-</body>
+<!--section class="container-fluid" id="section3">
+    <h1 class="text-center">A Bootstrap Foundation</h1>
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h3 class="text-center lato slideInUp animate">That <strong>Doesn't</strong> Have to Look Like Bootstrap.</h3>
+            <br>
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-1">Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content.</div>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-4 text-right">Anyhoo, this is just some random blurb of text, and Bootply.com is a playground and code editor for Bootstrap.</div>
+            </div>
+            <br>
+            <p class="text-center">
+                <img src="//placehold.it/444x222/444/FFF" class="img-responsive thumbnail center-block ">
+            </p>
+        </div>
+    </div>
+</section-->
+<section class="container-fluid" id="section4">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+            <h2 class="text-center lato">Resume</h2>
+            <hr>
+            <div class="media">
+                <h3>Software Engineer Intern at DBRS</h3>
+                <div class="media-left">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/93/DBRS_Corporate_Logo.jpg">
+                </div>
+                <div class="media-body media-middle">
+                    <p>Developed the back end for the website of a large financial company. Built up the API, Data Synching and helped Reverse Engineer legacy systems in order to build the new DBRS.com</p>
+                </div>
+            </div>
+            <hr>
+            <div class="media">
+                <h3>More to come</h3>
+                <div class="media-body media-middle">
+                    <p>What will the future hold?</p>
+                </div>
+                <div class="media-right">
+                    <img src="//placehold.it/100">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</section>
 
+<!--section class="container-fluid" id="section7">
+    <div class="row">
+        <div class="col-sm-1 col-sm-offset-3 col-xs-4 text-center">
+            <i class="fa fa-github fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-foursquare fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-pinterest fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-google-plus fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-twitter fa-4x"></i>
+        </div>
+        <div class="col-sm-1 col-xs-4 text-center">
+            <i class="fa fa-dribbble fa-4x"></i>
+        </div>
+    </div>
+</section-->
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            
+		</div>
+    </div>
+</footer>
+
+<div class="scroll-up">
+	<a href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+    <!--scripts loaded here-->
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
