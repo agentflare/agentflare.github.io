@@ -24,7 +24,8 @@
 }
 
 body {
-	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	/*font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;*/
+	font-family: 'Bitter', serif;
 	line-height: 1.5;
 	color: #3b393d;
 	background: #f0f0f0;
@@ -79,6 +80,7 @@ a:focus {
 
 .demo-4 .codrops-header h1 span {
 	color: #4f4c4c;
+	font-family: 'Bitter', serif;
 }
 
 .hidden {
