@@ -1,0 +1,10 @@
+#github {
+  position:absolute;
+  top:0;
+  right:0;
+  padding:20px;
+  background-color:#4B77BE;
+  color:#FFF;
+  text-decoration:none;
+  box-shadow: -2px 2px 7px 5px #888888;
+}
